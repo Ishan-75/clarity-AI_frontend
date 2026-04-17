@@ -1,0 +1,178 @@
+
+
+.center {
+  text-align: center;
+  padding: 40px;
+}
+.roles button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+.note {
+  color: #666;
+}
+
+
+.form input,
+.form textarea,
+.small-form input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  box-sizing: border-box;
+}
+button {
+  padding: 8px 12px;
+  margin-top: 8px;
+}
+.result pre {
+  background: #fafafa;
+  padding: 10px;
+  overflow: auto;
+}
+
+
+/* Student page additions */
+.modes {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+.modes label {
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: transparent;
+  transition: all 180ms ease;
+}
+
+.small-form input,
+.small-form select {
+  padding: 8px;
+  margin-right: 8px;
+}
+.search-results {
+  margin: 10px 0;
+}
+.lecture-row {
+  padding: 8px;
+  border-radius: 6px;
+  background: #fbfdfb;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+}
+.lecture-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.ltitle {
+  font-weight: 600;
+}
+.lmeta {
+  font-size: 12px;
+  color: #666;
+}
+
+
+.card {
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  margin-top: 12px;
+}
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.score-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1b5e20;
+}
+.score-bar {
+  flex: 1;
+  height: 14px;
+  background: #eee;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.score-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #66bb6a, #43a047);
+  transition: width 0.6s ease;
+}
+.incorrect-item {
+  padding: 10px;
+  border-radius: 6px;
+  background: #fff7f7;
+  border: 1px solid #ffdede;
+  margin-bottom: 8px;
+}
+.pairs {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+.exp {
+  color: #b00020;
+}
+.giv {
+  color: #333;
+}
+.nice {
+  color: #2e7d32;
+}
+
+/* animations */
+.animate-fade {
+  animation: fadeIn 0.25s ease;
+}
+.animate-pop {
+  animation: pop 0.2s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Lecture response card */
+.lecture-card {
+  margin-top: 8px;
+}
+.lecture-card .monospace {
+  font-family: monospace;
+  background: #f3f4f6;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+.lecture-card .text-preview {
+  margin-top: 6px;
+  padding: 8px;
+  background: #fafafa;
+  border-radius: 6px;
+  max-height: 160px;
+  overflow: auto;
+  white-space: pre-wrap;
+}

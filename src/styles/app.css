@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.home {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.role {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--Text-Muted-dark) 0px 2px 15px;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.AI-icon {
+  width: clamp(6vw, 10vw, 3vw);
+}
+.model-name {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: bold;
+}
+.menu-icon {
+  width: clamp(2vw, 10vw, 3vw);
+  cursor: pointer;
+  display: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  transform: scale(1.1);
+}
+.role-select {
+  border-radius: 12px;
+  padding: 2rem;
+  border: 2px solid var(--Primary-light);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.role-select:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.role-select-descript {
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.roles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 6rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.role-dashboard {
+  display: grid;
+  background: transparent ;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 3rem;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 95%;
+  box-sizing: border-box;
+  margin: 40px auto;
+}
+
+.role {
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./background.jpg);
+  background-size:60% 100%;
+
+}
+
+.container {
+  width: 90%;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 8px;
+}
+.input {
+  border-radius: 16px;
+  outline: none;
+  border: 1px solid var(--Text-Muted-dark);
+  padding: 0.5rem;
+}
+.submit {
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid var(--Text-Muted-dark);
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.submit:hover {
+  transform: scale(1.01);
+  border-color: var(--Primary-Accent-dark);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+  position: absolute;
+  left: 120px;
+  border: 1px solid var(--Text-Muted-dark);
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modes label.active {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* quiz */
+.quiz .question-container {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.question-container {
+  padding: 6px 0;
+}
+.question {
+  margin: 10px 0;
+}
+
+/* MCQ Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border: 2px solid var(--Border-Color, #ddd);
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.option-label:hover {
+  border-color: var(--Primary-Color, #007bff);
+  background-color: var(--Background-Light, #f8f9fa);
+}
+
+.option-label input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.option-label input[type="radio"]:checked + span,
+.option-label input[type="radio"]:checked {
+  accent-color: var(--Primary-Color, #007bff);
+}
+
+.answer-input {
+  margin: 8px 0;
+  padding: 10px 12px;
+  border: 1px solid var(--Border-Color, #ccc);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* ========================= */
+/* AUTH PAGES (Login/Register) */
+/* ========================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Background);
+  padding: 2rem;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 420px;
+  background: var(--Surface-cards);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.login-form h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--Text-Primary);
+}
+
+.login-form button {
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  background: var(--Primary-Accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.error {
+  background: rgba(255, 0, 0, 0.08);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  color: #ff4d4d;
+  padding: 0.6rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.auth-switch {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--Text-Muted);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.auth-switch:hover {
+  color: var(--Primary-Accent);
+}
+
+.register-form {
+  width: 100%;
+  max-width: 450px;
+  background: var(--Surface-cards);
+  padding: 2.8rem;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.register-form h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  color: var(--Text-Primary);
+  margin-bottom: 0.3rem;
+}
+
+.register-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--Text-Muted);
+  margin-bottom: 1rem;
+}
+
+.register-form input,
+.register-form select {
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--Border-Divider);
+  background: var(--input-tag-background);
+  color: var(--Text-Primary);
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  outline: none;
+  border-color: var(--Primary-Accent);
+  box-shadow: 0 0 0 3px rgba(79, 157, 255, 0.25);
+}
+
+.register-form button {
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(
+    135deg,
+    var(--Primary-Accent),
+    var(--Secondary-Accent)
+  );
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.register-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+.register-switch {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--Text-Muted);
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.register-switch:hover {
+  color: var(--Primary-Accent);
+}

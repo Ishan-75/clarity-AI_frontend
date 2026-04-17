@@ -1,0 +1,66 @@
+body {
+  background: var(--Background);
+  color: var(--Text-Primary);
+}
+.navbar {
+  background: var(--Surface-cards);
+}
+.role-select {
+  background: var(--Surface-cards);
+  color: var(--Text-Primary);
+}
+.role-select:hover {
+  background: var(--Primary-Accent);
+  color: var(--Text-hover);
+}
+.role-select-descript {
+  color: var(--Text-Primary);
+}
+.role-dashboard {
+  
+  margin: 100px auto;
+
+  background: transparent;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  border-radius: 12px;
+}
+.container {
+  background: var(--container-background);
+}
+.input {
+  background: var(--input-tag-background);
+  color: var(--Text-Primary);
+}
+.submit {
+  background: var(--submit-btn-background);
+  /* color: black; */
+}
+.submit:hover {
+  color: var(--Text-hover);
+}
+.back-button {
+  background: var(--submit-btn-background);
+  /* color: black; */
+}
+.modes label.active {
+  background: var(--Mode-active);
+  color: var(--Text-Muted);
+}
+.close-mobile-menu {
+  color: var(--Text-Primary);
+  /* background: var(--Text-Muted); */
+}
+.close-mobile-menu:hover {
+  background: var(--Text-Muted);
+  color: var(--Text-hover);
+}
+.mobile-menu-item {
+  color: var(--Text-Primary);
+}
+.mobile-menu-item:hover {
+  background: var(--Primary-Accent);
+  color: var(--Text-hover);
+}

@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root[data-theme="dark"] {
+  --Background: #0B0F19;
+  --Surface-cards: #161B2E;
+  --Primary-Accent: #4F9DFF;
+  --Secondary-Accent: #22D3EE;
+  --Text-Primary: #E5E7EB;
+  --Text-Muted: #9CA3AF;
+  --Text-hover:white;
+  --Mode-active:#FFFFFF;
+  --Border-Divider: #1F2937;
+  --input-tag-background: #334257;
+  --container-background: #37B7C3;
+  --submit-btn-background: #FFE3CA;
+}
+
+:root[data-theme="light"] {
+  --Background: #BFC9D1;
+  --Surface-cards: #F9FAFB;
+  --Primary-Accent: #E8D4B4;
+  --Secondary-Accent: #FF896B;
+  --Text-Primary: #111827;
+  --Text-Muted: #6B7280;
+  --Text-hover:black;
+  --Mode-active:#000000;
+  --Border-Divider: #E5E7EB;
+  --input-tag-background: #E5E7EB;
+  --container-background: #F9FAFB;
+  --submit-btn-background: #FF9B51;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "STIX Two Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/stix-two-text-v18-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "STIX Two Text";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/stix-two-text-v18-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "STIX Two Text";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/stix-two-text-v18-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "STIX Two Text";
+  font-style: italic;
+  font-weight: 500;
+  src: url("./fonts/stix-two-text-v18-latin-500italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "STIX Two Text";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/stix-two-text-v18-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "STIX Two Text";
+  font-style: italic;
+  font-weight: 600;
+  src: url("./fonts/stix-two-text-v18-latin-600italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "STIX Two Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/stix-two-text-v18-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "STIX Two Text";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./fonts/stix-two-text-v18-latin-700italic.woff2") format("woff2");
+}
+
+* {
+  font-family: "STIX Two Text";
+  font-size: 16px;
+}
