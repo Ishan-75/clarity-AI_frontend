@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../styles/responsive.css";
 import Navbar from "../components/Navbar";
 
-const API_BASE = "http://127.0.0.1:8000/api/v1";
+const API_BASE = "https://clarity-ai-backend-728e.onrender.com/";
 const STORAGE_KEY = "studentPageState";
 
 export default function StudentPage() {

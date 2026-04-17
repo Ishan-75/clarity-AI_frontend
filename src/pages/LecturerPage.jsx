@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/responsive.css";
 import "../styles/app.css";
 
-const API_BASE = "http://127.0.0.1:8000/api/v1";
+const API_BASE = "https://clarity-ai-backend-728e.onrender.com/";
 
 export default function LecturerPage() {
   const emptyForm = {
